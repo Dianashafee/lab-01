@@ -1,111 +1,146 @@
 
 
-@media(min-width: 767px){
 
-  *{
+@media(min-width: 481px) and (max-width: 766px) {
+
+
+    *{
         text-align: center;
     }
 
+
+    #a{ grid-area: a; }
+    #b { grid-area: b; }
+    #c { grid-area: C; }
+    #d { grid-area: D; }
+    #e { grid-area: e; }
+    #f { grid-area: f; }
+    #g { grid-area: g; }
+    #h { grid-area: h; }
+    #i { grid-area: i; }
+    
+    .container {
+      display: grid;
+      grid-template-areas:
+        'a a a a a '
+        'b C C  D D'
+        'b e f g h'
+        'b i i i i ';
+      
+    }
+    
+    .container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      border: 1px solid green;
+      box-sizing:border-box;
+      font-size: 30px;
+    }
+
+
+
+
+
+ 
     #a{
         width: 100%;
         height: 100px;
         line-height: 75px;
         border: 1px solid rgb(68, 66, 66);
         box-sizing: border-box;
-        background-color: rgb(230, 255, 245);
+        background-color: rgb(255, 255, 230);
     
     } 
     #b{
-        float: left;
-        width: 20.833333%;
+        
+        
         height: 600px;
        line-height: 600px;
        border: 1px solid rgb(68, 66, 66);
        box-sizing: border-box;
-       background-color: rgb(179, 255, 224);
+       background-color: rgb(255, 254, 179);
     }
     #c{
-        float: left;
-        width: 39.58333%;
+        
+        
         height: 200px;
        line-height: 200px;
        border: 1px solid rgb(68, 66, 66);
        box-sizing: border-box;
-       background-color: rgb(128, 255, 204);
+       background-color: rgb(253, 255, 128);
     }
     #d{
-        float: left;
-        width: 39.58333%;
+        
+        
         height: 200px;
        line-height: 200px;
        border: 1px solid rgb(68, 66, 66);
        box-sizing: border-box;
-       background-color:rgb(51, 255, 173);
+       background-color:rgb(241, 255, 51);
     }
     
     
     #e{
          
-        float: left;
-        width: 19.7916%;
+        
+       
         height: 250px;
         line-height: 250px;
         border: 1px solid rgb(68, 66, 66);
         border-collapse: collapse;
         box-sizing: border-box;
-        background-color:rgb(0, 255, 153);
+        background-color:rgb(251, 255, 0);
        
     
     }
     #f{
         
-        float: left;
-        width: 19.7916%;
+       
+       
         height: 250px;
         line-height: 250px;
         border: 1px solid rgb(68, 66, 66);
         box-sizing: border-box;
         border-collapse: collapse;
-        background-color:rgb(0, 204, 122);
+        background-color:rgb(204, 201, 0);
         
     
     }
     
     #g{
         
-        float: left;
-        width: 19.7916%;
+      
+      
         height: 250px;
         line-height: 250px;
         border: 1px solid rgb(68, 66, 66);
         box-sizing: border-box;
         border-collapse: collapse;
-        background-color: rgb(0, 153, 92);
+        background-color: rgb(150, 153, 0);
        
     }
     #h{
       
         height: 250px;
-        float: left;
-        width: 19.7916%;
+        
+        
         line-height: 250px;
         border: 1px solid rgb(68, 66, 66);
         box-sizing: border-box;
         border-collapse: collapse;
-        background-color: rgb(0, 128, 77);
+        background-color: rgb(119, 128, 0);
     
        
     }
     
     #i{
         display: inline-block;
-    width: 79.1666%;   
      height: 150px;
        line-height: 80px;
        border: 1px solid rgb(68, 66, 66);
        box-sizing: border-box;
        border-collapse: collapse;
-       background-color: rgb(0, 77, 46);
+       background-color: rgb(72, 77, 0);
        
     }
 }

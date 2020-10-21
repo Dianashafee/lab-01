@@ -1,5 +1,6 @@
 
 @import 'base.css';
-@import 'mobile-layout.css';
 @import 'desktop-layout.css';
+@import 'tablet-layout.css';
+@import 'mobile-layout.css';
 
